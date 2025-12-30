@@ -1,0 +1,17 @@
+{
+  "name": "your-app-name",
+  "version": "0.1.0",
+  "homepage": "https://your-username.github.io/repository-name",  // ← 이 줄 추가
+  "private": true,
+  "dependencies": {
+    ...
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",      // ← 이 줄 추가
+    "deploy": "gh-pages -d build",      // ← 이 줄 추가
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
